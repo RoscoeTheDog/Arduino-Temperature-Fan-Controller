@@ -4,6 +4,7 @@
 #include <Arduino.h>
 #include <Globals.h>
 
+// All routine actions. For now, just read the update the sensor data on each compare match.
 ISR(TIMER0_COMPA_vect)
 {
     PIN_A3_READ = analogRead(A3);

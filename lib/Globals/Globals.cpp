@@ -4,6 +4,7 @@
 
 #include "Globals.h"
 
+// Values need to be initialized in the cpp file
 unsigned volatile int PIN_A0_READ = 0;
 unsigned volatile int PIN_A1_READ = 0;
 unsigned volatile int PIN_A2_READ = 0;

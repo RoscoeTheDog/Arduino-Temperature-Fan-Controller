@@ -32,7 +32,7 @@ void setup(void)
     pinMode(10, OUTPUT);
     pinMode(11, OUTPUT);
 
-    // Initialize a Thermistor Object, passing the readValue address and hardware specifications to the constructor.
+    // Initialize a Thermistor Object, passing specifications to the constructor
     Thermistor Thermistor0(&PIN_A0_READ, PIN_A0, 20000, 20000, 5.0);
     Thermistor Thermistor1(&PIN_A1_READ, PIN_A1, 20000, 20000, 5.0);
     Thermistor Thermistor2(&PIN_A2_READ, PIN_A2, 20000, 20000, 5.0);

@@ -1,5 +1,7 @@
 #include <Thermistor.h>
 
+
+// TODO: this needs to be worked on. It is not reporting the correct values. Commented out code is older tutorial reference. Will fix later.
 void Thermistor::updateTempC()
 {
     // update the read voltage from thermistor line

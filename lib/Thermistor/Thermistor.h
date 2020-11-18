@@ -10,6 +10,7 @@
 #include <Globals.h>
 #include <MemoryFree.h>
 
+// Create a Thermistor object which can report useful info pertaining to the sensor
 class Thermistor
 {
 private:

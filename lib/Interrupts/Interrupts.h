@@ -9,6 +9,7 @@
 #include <Globals.h>
 #include <Interrupts.cpp>
 
+// Timer/Interrupt Configuration
 void initializeInterrupts()
 {
     // disable all interrupts until needed.

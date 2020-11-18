@@ -6,6 +6,7 @@
 #define ARDUINO_TEMPERATURE_CONTROLLER_GLOBALS_H
 #include <ArduinoSTL.h>
 
+// These will run in a ISR periodically to update their values.
 extern volatile unsigned int PIN_A0_READ;
 extern volatile unsigned int PIN_A1_READ;
 extern volatile unsigned int PIN_A2_READ;
