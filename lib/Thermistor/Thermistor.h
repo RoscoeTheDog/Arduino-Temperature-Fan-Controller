@@ -8,7 +8,7 @@
 #include <Arduino.h>
 #include <ArduinoSTL.h>
 #include <Globals.h>
-#include <memoryfree.h>
+#include <MemoryFree.h>
 
 class Thermistor
 {
