@@ -5,11 +5,11 @@
 .vscode/ipch
 
 # Project exclude paths
-/cmake-build-uno/
-cmake-build-debug/
-.vscode/
-.pio/
-include/
-test/
+**/cmake-build-uno/
+**cmake-build-debug/
+**.vscode/
+**.pio/
+**include/
+**test/
 CMakeListsPrivate.txt
 **.idea/
