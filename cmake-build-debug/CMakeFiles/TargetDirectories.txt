@@ -1,0 +1,5 @@
+C:/Users/Aspen/Documents/PlatformIO/Projects/Arduino Temperature Controller/cmake-build-debug/CMakeFiles/Production.dir
+C:/Users/Aspen/Documents/PlatformIO/Projects/Arduino Temperature Controller/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Aspen/Documents/PlatformIO/Projects/Arduino Temperature Controller/cmake-build-debug/CMakeFiles/Debug.dir
+C:/Users/Aspen/Documents/PlatformIO/Projects/Arduino Temperature Controller/cmake-build-debug/CMakeFiles/Z_DUMMY_TARGET.dir
+C:/Users/Aspen/Documents/PlatformIO/Projects/Arduino Temperature Controller/cmake-build-debug/CMakeFiles/rebuild_cache.dir
