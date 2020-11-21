@@ -13,6 +13,21 @@
 // initialize a List of sensors
 std::vector<Thermistor> sensors;
 
+
+// THERMISTOR SENSORS CONFIGURATION:
+#define THERMISTOR0_LOGICAL_PIN A0
+#define THERMISTOR1_LOGICAL_PIN A1
+#define THERMISTOR2_LOGICAL_PIN A2
+#define THERMISTOR3_LOGICAL_PIN A3
+#define THERMISTOR4_LOGICAL_PIN A4
+#define THERMISTOR5_LOGICAL_PIN A5
+
+
+
+
+
+
+
 void setup(void)
 {
     // Start Arduino Serial Communication
