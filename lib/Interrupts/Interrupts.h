@@ -32,9 +32,9 @@ void initializeInterrupts()
     TCCR0A |= (1 << WGM00);
     // Select clock register (pg 109)
     TCCR0B |= (1 << CS00);
-    //Enable Compare Match Interrupts (pg 111)
-    TIMSK0 |= (1 << OCIE0B);
-    TIMSK0 |= (1 << OCIE0A);
+    // Enable Compare Match Interrupts (pg 111)
+//    TIMSK0 |= (1 << OCIE0B);
+//    TIMSK0 |= (1 << OCIE0A);
 
     OCR0B = 255;
     OCR0A = 255;
@@ -82,7 +82,7 @@ void initializeInterrupts()
     TCCR2B |= (1 << CS20);
     // Enable Compare Match Interrupts (pg 163)
     TIMSK2 |= (1 << OCIE2A);
-    TIMSK2 |= (1 << OCIE2B);
+//    TIMSK2 |= (1 << OCIE2B);
 
     OCR2A = 255;
     OCR2B = 255;

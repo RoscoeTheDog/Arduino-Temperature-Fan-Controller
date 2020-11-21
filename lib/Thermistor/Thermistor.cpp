@@ -8,12 +8,27 @@ void Thermistor::updateTempC()
     calcVo();
     // update r1 value from thermistor
     calcR1();
-    // convert to Celsius
-    float result = static_cast<float>(
-            ((log(r1 / nominalResistance) / beta) + (1.0 / nominalTemperature + 273.15) / 1.0) - 273.15
-    );
 
-    tempC = result;
+    float steinhart;
+    steinhart = r1 / nominalResistance;                                // (R/Ro)
+    steinhart = log(steinhart);                                         // ln(R/Ro)
+    steinhart /= beta;                                         // 1/B * ln(R/Ro)
+    steinhart += 1.0 / (nominalTemperature + 273.15); // + (1/To)
+    steinhart = 1.0 / steinhart;                                        // Invert
+    steinhart -= 273.15;
+
+    *tempC = steinhart;
+
+
+
+
+
+//    // convert to Celsius
+//    float result = static_cast<float>(
+//            ((log(r1 / nominalResistance) / beta) + (1.0 / nominalTemperature + 273.15) / 1.0) - 273.15
+//    );
+//
+//    tempC = result;
 
     // ***Notes from tutorial for thermistor***
 
@@ -49,13 +64,13 @@ void Thermistor::updateTempC()
 
     //  // Convert the resistance to Temperature (C).
     //  for (int i = 0; i < numAnalogPins; ++i) {
-    //      float steinhart;
-    //      steinhart = R1Table[i] / THERMISTOR_NOMINAL;                                // (R/Ro)
-    //      steinhart = log(steinhart);                                         // ln(R/Ro)
-    //      steinhart /= B_COEFFICIENT;                                         // 1/B * ln(R/Ro)
-    //      steinhart += 1.0 / (TEMPERATURE_NOMINAL + 273.15); // + (1/To)
-    //      steinhart = 1.0 / steinhart;                                        // Invert
-    //      steinhart -= 273.15;                                                // convert to C
+//          float steinhart;
+//          steinhart = R1Table[i] / THERMISTOR_NOMINAL;                                // (R/Ro)
+//          steinhart = log(steinhart);                                         // ln(R/Ro)
+//          steinhart /= B_COEFFICIENT;                                         // 1/B * ln(R/Ro)
+//          steinhart += 1.0 / (TEMPERATURE_NOMINAL + 273.15); // + (1/To)
+//          steinhart = 1.0 / steinhart;                                        // Invert
+//          steinhart -= 273.15;                                                // convert to C
 
     //      tempTable[i] = steinhart;
     //  }
@@ -63,10 +78,8 @@ void Thermistor::updateTempC()
 
 void Thermistor::calcR1()
 {
-    // calculate and store result into memory
-    float result = ((this->lineVoltage * r2) - (r2 * vo)) / vo;
-    // update address of result
-    r1 = result;
+    // calculate and store result
+    r1 = ( (lineVoltage * r2) - (r2 * vo)) / vo;
 }
 
 void Thermistor::calcVo()
@@ -96,29 +109,29 @@ void Thermistor::printConfig()
             switch(j)
             {
                 case 0:
-                    std::cout << "Logical Pin Address: " << getLogicalPinAddress() << " ";
-                    break;
-                case 1:
-                    std::cout << "Analog Read: " << getAdcValue() << " ";
-                    break;
-                case 2:
-                    std::cout << "Nominal Resistance: " << getNominalResistance() << " ";
-                    break;
-                case 3:
-                    std::cout << "Beta Value: " << getBeta() << " ";
-                    break;
-                case 4:
-                    std::cout << "Supply Voltage: " << getLineVoltage() << " ";
-                    break;
-                case 5:
-                    std::cout << "Voltage Output: " << getVo() << " ";
-                    break;
-                case 6:
-                    std::cout << "R1: " << getR1() << " ";
-                    break;
-                case 7:
-                    std::cout << "R2: " << getR2() << " ";
-                    break;
+//                    std::cout << "Logical Pin Address: " << getLogicalPinAddress() << " ";
+//                    break;
+//                case 1:
+//                    std::cout << "Analog Read: " << getAdcValue() << " ";
+//                    break;
+//                case 2:
+//                    std::cout << "Nominal Resistance: " << getNominalResistance() << " ";
+//                    break;
+//                case 3:
+//                    std::cout << "Beta Value: " << getBeta() << " ";
+//                    break;
+//                case 4:
+//                    std::cout << "Supply Voltage: " << getLineVoltage() << " ";
+//                    break;
+//                case 5:
+//                    std::cout << "Voltage Output: " << getVo() << " ";
+//                    break;
+//                case 6:
+//                    std::cout << "R1: " << getR1() << " ";
+//                    break;
+//                case 7:
+//                    std::cout << "R2: " << getR2() << " ";
+//                    break;
                 case 8:
                     std::cout << "Temperature (C): " << getTemperatureCelsius() << " ";
                     break;
@@ -135,6 +148,6 @@ void Thermistor::printConfig()
 
 void Thermistor::updateTempF()
 {
-
+    tempF = (*tempC) * 1.8 + 32;
 }
 

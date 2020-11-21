@@ -16,6 +16,13 @@
   <component name="ChangeListManager">
     <list default="true" id="4001ec54-6338-4bce-a149-01ca2a9e26c6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Globals/Globals.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Globals/Globals.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Globals/Globals.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Globals/Globals.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Interrupts/Interrupts.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Interrupts/Interrupts.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Interrupts/Interrupts.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Interrupts/Interrupts.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Thermistor/Thermistor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Thermistor/Thermistor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Thermistor/Thermistor.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Thermistor/Thermistor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +36,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="1-nano-Z_DUMMY_TARGET" />
+  </component>
   <component name="ProjectId" id="1kZj1sBk5vdytbVwhjZnHpa0OEs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,8 +49,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/CMakeLists.txt&#10;C:/Users/Aspen/Documents/PlatformIO/Projects/Arduino_Temperature_Fan_Speed_Controller01/CMakeListsPrivate.txt" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Aspen\Documents\PlatformIO\Projects\Arduino_Temperature_Fan_Speed_Controller01\test" />
+      <recent name="C:\Users\Aspen\Documents\PlatformIO\Projects\Arduino_Temperature_Fan_Speed_Controller01\include" />
+    </key>
   </component>
   <component name="RunManager" selected="PlatformIO.PlatformIO Upload">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
@@ -83,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605914795974</updated>
       <workItem from="1605914797019" duration="344000" />
-      <workItem from="1605917726145" duration="3987000" />
+      <workItem from="1605917726145" duration="20367000" />
     </task>
     <task id="LOCAL-00001" summary="testing .idea/ folder">
       <created>1605939810271</created>
@@ -92,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605939810271</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="testing .idea/ folder">
+      <created>1605940428863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605940428863</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,37 +130,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605939540314" />
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605939695369">
+    <state x="721" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605940392947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605939695369" />
-    <state x="477" y="0" key="CommitChangelistDialog2" timestamp="1605939809928">
+    <state x="721" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605940392947" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605940364294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="477" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605939809928" />
-    <state width="1876" height="235" key="GridCell.Tab.0.bottom" timestamp="1605939959717">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605940364294" />
+    <state x="477" y="0" key="CommitChangelistDialog2" timestamp="1605940428585">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605939959717" />
-    <state width="1876" height="235" key="GridCell.Tab.0.center" timestamp="1605939959717">
+    <state x="477" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605940428585" />
+    <state width="1876" height="239" key="GridCell.Tab.0.bottom" timestamp="1605954630170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="235" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605939959717" />
-    <state width="1876" height="235" key="GridCell.Tab.0.left" timestamp="1605939959717">
+    <state width="1876" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605954630170" />
+    <state width="1876" height="239" key="GridCell.Tab.0.center" timestamp="1605954630170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="235" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605939959717" />
-    <state width="1876" height="235" key="GridCell.Tab.0.right" timestamp="1605939959717">
+    <state width="1876" height="239" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605954630170" />
+    <state width="1876" height="239" key="GridCell.Tab.0.left" timestamp="1605954630170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="235" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605939959717" />
+    <state width="1876" height="239" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605954630170" />
+    <state width="1876" height="239" key="GridCell.Tab.0.right" timestamp="1605954630170">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="239" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605954630170" />
     <state x="461" y="151" key="SettingsEditor" timestamp="1605939557201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605939557201" />
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1605939818038">
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1605940433078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605939818038" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605940433078" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605942363177">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605942363177" />
   </component>
 </project>

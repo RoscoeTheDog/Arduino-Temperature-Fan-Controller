@@ -14,7 +14,7 @@
 class Thermistor
 {
 private:
-    volatile unsigned int *adcValue = nullptr;
+    volatile unsigned long int *adcValue = nullptr;
     const int logicalPinAddress;
     const long nominalResistance; // known nominal rating of thermistor
     const int nominalTemperature; // temperature at which known resistance for thermistor is rated (default 25C if not known)
@@ -23,10 +23,11 @@ private:
     float vo;   // incoming Voltage on the ADC from divider circuit
     float r1;   // current resistance of thermistor (calculated from the voltage divider)
     const long int r2;   // R2 is the series resistor in the divider circuit (required for calculating R1)
-    float tempC;
+    volatile float * tempC = nullptr;   // using a global pointer so can be read in ISR without calculating values twice
     float tempF;
 
 private:
+
     void updateTempC();
 
     void updateTempF();
@@ -37,9 +38,9 @@ private:
 
 public:
 
-    Thermistor(volatile unsigned int *analogRead, int pinAddress, long int nominalResistance, long int R2, float lineVoltage,
+    Thermistor(volatile unsigned long int *analogRead, int pinAddress, volatile float *tempC, long int nominalResistance, long int R2, float lineVoltage,
                int beta = 3950, int nominalTemperature = 25) :
-            adcValue(analogRead), logicalPinAddress(pinAddress), nominalResistance(nominalResistance),
+            adcValue(analogRead), logicalPinAddress(pinAddress), tempC(tempC), nominalResistance(nominalResistance),
             lineVoltage(lineVoltage), r2(R2), beta(beta), nominalTemperature(nominalTemperature){};
 
     volatile unsigned int getAdcValue() { return *adcValue; }
@@ -58,7 +59,7 @@ public:
 
     float getR2() const { return r2; }
 
-    float getTemperatureCelsius() { updateTempC(); return tempC; }
+    float getTemperatureCelsius() { updateTempC(); return *tempC; }
 
     float getTemperatureFahrenheit() { updateTempF(); return tempF; }
 

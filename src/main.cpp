@@ -33,12 +33,12 @@ void setup(void)
     pinMode(11, OUTPUT);
 
     // Initialize a Thermistor Object, passing specifications to the constructor
-    Thermistor Thermistor0(&PIN_A0_READ, PIN_A0, 20000, 20000, 5.0);
-    Thermistor Thermistor1(&PIN_A1_READ, PIN_A1, 20000, 20000, 5.0);
-    Thermistor Thermistor2(&PIN_A2_READ, PIN_A2, 20000, 20000, 5.0);
-    Thermistor Thermistor3(&PIN_A3_READ, PIN_A3, 20000, 20000, 5.0);
-    Thermistor Thermistor4(&PIN_A4_READ, PIN_A4, 20000, 20000, 5.0);
-    Thermistor Thermistor5(&PIN_A5_READ, PIN_A5, 20000, 20000, 5.0);
+    Thermistor Thermistor0(&PIN_A0_READ, PIN_A0, &TEMP0_C, 20000, 20000, 3.62);
+    Thermistor Thermistor1(&PIN_A1_READ, PIN_A1, &TEMP1_C, 20000, 20000, 5.0);
+    Thermistor Thermistor2(&PIN_A2_READ, PIN_A2, &TEMP2_C,20000, 20000, 5.0);
+    Thermistor Thermistor3(&PIN_A3_READ, PIN_A3, &TEMP3_C,20000, 20000, 5.0);
+    Thermistor Thermistor4(&PIN_A4_READ, PIN_A4, &TEMP4_C,20000, 20000, 5.0);
+    Thermistor Thermistor5(&PIN_A5_READ, PIN_A5, &TEMP5_C,20000, 20000, 5.0);
 
     sensors.push_back(Thermistor0);
     sensors.push_back(Thermistor1);
@@ -58,10 +58,10 @@ void blockTime(unsigned waitTime) {
 
 void loop(void)
 {
-    // Get all Thermistors from vector and print each config.
-    for (int i = 0; i < sensors.size(), ++i;){
+//     Get all Thermistors from vector and print each config.
+    for (int i = 0; i < sensors.size(); ++i){
         Thermistor * T;
-        T = &sensors.at(i); // get reference to object inside.
+        T = &sensors.at(0); // get reference to object inside.
         T->printConfig();   // print out the Thermistor Statistics.
         std::cout << std::endl; // newline betweeen each probe for readability.
     }
