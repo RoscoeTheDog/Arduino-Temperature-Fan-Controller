@@ -15,8 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4001ec54-6338-4bce-a149-01ca2a9e26c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platformio.ini" beforeDir="false" afterPath="$PROJECT_DIR$/platformio.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/CMakeListsPrivate.txt" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/CMakeLists.txt&#10;C:/Users/Aspen/Documents/PlatformIO/Projects/Arduino_Temperature_Fan_Speed_Controller01/CMakeListsPrivate.txt" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
@@ -49,22 +48,28 @@
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Z_DUMMY_TARGET" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller01" TARGET_NAME="Z_DUMMY_TARGET" CONFIG_NAME="uno" RUN_TARGET_PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller01" RUN_TARGET_NAME="Z_DUMMY_TARGET">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlatformIO Debug" type="platformio" factoryName="PlatformIO Debug" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="Debug" CONFIG_NAME="nano">
+    <configuration name="PlatformIO Debug" type="platformio" factoryName="PlatformIO Debug" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller01" TARGET_NAME="Debug" CONFIG_NAME="nano">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlatformIO Upload" type="platformio" factoryName="PlatformIO Upload" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="Production" CONFIG_NAME="nano">
+    <configuration name="PlatformIO Upload" type="platformio" factoryName="PlatformIO Upload" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller01" TARGET_NAME="Production" CONFIG_NAME="nano">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="CMake Application.Z_DUMMY_TARGET" />
       <item itemvalue="PlatformIO.PlatformIO Upload" />
       <item itemvalue="PlatformIO.PlatformIO Debug" />
     </list>
@@ -78,37 +83,61 @@
       <option name="presentableId" value="Default" />
       <updated>1605914795974</updated>
       <workItem from="1605914797019" duration="344000" />
-      <workItem from="1605917726145" duration="3299000" />
+      <workItem from="1605917726145" duration="3987000" />
     </task>
+    <task id="LOCAL-00001" summary="testing .idea/ folder">
+      <created>1605939810271</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605939810271</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="testing .idea/ folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing .idea/ folder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605939540314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605939540314" />
-    <state width="1876" height="292" key="GridCell.Tab.0.bottom" timestamp="1605915140284">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605939695369">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605915140284" />
-    <state width="1876" height="292" key="GridCell.Tab.0.center" timestamp="1605915140284">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605939695369" />
+    <state x="477" y="0" key="CommitChangelistDialog2" timestamp="1605939809928">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="292" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605915140284" />
-    <state width="1876" height="292" key="GridCell.Tab.0.left" timestamp="1605915140284">
+    <state x="477" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605939809928" />
+    <state width="1876" height="235" key="GridCell.Tab.0.bottom" timestamp="1605939959717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="292" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605915140284" />
-    <state width="1876" height="292" key="GridCell.Tab.0.right" timestamp="1605915140284">
+    <state width="1876" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605939959717" />
+    <state width="1876" height="235" key="GridCell.Tab.0.center" timestamp="1605939959717">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="292" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605915140284" />
+    <state width="1876" height="235" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605939959717" />
+    <state width="1876" height="235" key="GridCell.Tab.0.left" timestamp="1605939959717">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="235" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605939959717" />
+    <state width="1876" height="235" key="GridCell.Tab.0.right" timestamp="1605939959717">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="235" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605939959717" />
     <state x="461" y="151" key="SettingsEditor" timestamp="1605939557201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605939557201" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1605939818038">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605939818038" />
   </component>
 </project>
