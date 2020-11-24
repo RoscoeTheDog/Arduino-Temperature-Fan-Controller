@@ -7,7 +7,7 @@
 
 #include <Arduino.h>
 #include <ArduinoSTL.h>
-#include <Globals.h>
+#include <Configuration.h>
 #include <MemoryFree.h>
 
 // Create a Thermistor object which can report useful info pertaining to the sensor

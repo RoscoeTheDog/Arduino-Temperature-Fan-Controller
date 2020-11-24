@@ -79,7 +79,7 @@ void Thermistor::updateTempC()
 void Thermistor::calcR1()
 {
     // calculate and store result
-    r1 = ( (lineVoltage * r2) - (r2 * vo)) / vo;
+    r1 = ( (lineVoltage * r2) - (r2 * vo) ) / vo;
 }
 
 void Thermistor::calcVo()

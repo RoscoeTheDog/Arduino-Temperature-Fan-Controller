@@ -5,9 +5,9 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Arduino_Temperature_Fan_Speed_Controller" targetName="Z_DUMMY_TARGET" />
-      <config projectName="Arduino_Temperature_Fan_Speed_Controller" targetName="Debug" />
-      <config projectName="Arduino_Temperature_Fan_Speed_Controller" targetName="Production" />
+      <config projectName="Arduino_Temperature_Fan_Speed_Controller01" targetName="Z_DUMMY_TARGET" />
+      <config projectName="Arduino_Temperature_Fan_Speed_Controller01" targetName="Debug" />
+      <config projectName="Arduino_Temperature_Fan_Speed_Controller01" targetName="Production" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -18,10 +18,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4001ec54-6338-4bce-a149-01ca2a9e26c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Configuration/Configuration.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Globals/Globals.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Globals/Globals.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Globals/Globals.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Globals/Globals.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/Interrupts/Interrupts.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Interrupts/Interrupts.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Interrupts/Interrupts.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Interrupts/Interrupts.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Thermistor/Thermistor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Thermistor/Thermistor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Thermistor/Thermistor.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Thermistor/Thermistor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +37,9 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:uno" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:nano" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="1-nano-Z_DUMMY_TARGET" />
   </component>
   <component name="ProjectId" id="1kZj1sBk5vdytbVwhjZnHpa0OEs" />
   <component name="ProjectViewState">
@@ -46,25 +48,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/CMakeLists.txt&#10;C:/Users/Aspen/Documents/PlatformIO/Projects/Arduino_Temperature_Fan_Speed_Controller01/CMakeListsPrivate.txt" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Aspen\Documents\PlatformIO\Projects\Arduino_Temperature_Fan_Speed_Controller01\lib" />
+      <recent name="C:\Users\Aspen\Documents\PlatformIO\Projects\Arduino_Temperature_Fan_Speed_Controller01\lib\configuration" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Aspen\Documents\PlatformIO\Projects\Arduino_Temperature_Fan_Speed_Controller01\test" />
       <recent name="C:\Users\Aspen\Documents\PlatformIO\Projects\Arduino_Temperature_Fan_Speed_Controller01\include" />
     </key>
   </component>
   <component name="RunManager" selected="PlatformIO.PlatformIO Upload">
-    <configuration name="Z_DUMMY_TARGET" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller" TARGET_NAME="Z_DUMMY_TARGET" CONFIG_NAME="uno" RUN_TARGET_PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller" RUN_TARGET_NAME="Z_DUMMY_TARGET">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="Z_DUMMY_TARGET" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller01" TARGET_NAME="Z_DUMMY_TARGET" CONFIG_NAME="uno" RUN_TARGET_PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller01" RUN_TARGET_NAME="Z_DUMMY_TARGET">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -74,12 +82,12 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlatformIO Debug" type="platformio" factoryName="PlatformIO Debug" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller" TARGET_NAME="Debug" CONFIG_NAME="nano">
+    <configuration name="PlatformIO Debug" type="platformio" factoryName="PlatformIO Debug" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller01" TARGET_NAME="Debug" CONFIG_NAME="nano">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlatformIO Upload" type="platformio" factoryName="PlatformIO Upload" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller" TARGET_NAME="Production" CONFIG_NAME="nano">
+    <configuration name="PlatformIO Upload" type="platformio" factoryName="PlatformIO Upload" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Arduino_Temperature_Fan_Speed_Controller01" TARGET_NAME="Production" CONFIG_NAME="nano">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -127,10 +135,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="testing .idea/ folder" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605939540314">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606101431298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605939540314" />
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606101431298" />
     <state x="721" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605940392947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -143,34 +151,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="477" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605940428585" />
-    <state width="1237" height="157" key="GridCell.Tab.0.bottom" timestamp="1605987265790">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605987265790" />
-    <state width="1876" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605954630170" />
-    <state width="1237" height="157" key="GridCell.Tab.0.center" timestamp="1605987265790">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605987265790" />
-    <state width="1876" height="239" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605954630170" />
-    <state width="1237" height="157" key="GridCell.Tab.0.left" timestamp="1605987265790">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605987265790" />
-    <state width="1876" height="239" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605954630170" />
-    <state width="1237" height="157" key="GridCell.Tab.0.right" timestamp="1605987265790">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="157" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605987265790" />
-    <state width="1876" height="239" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605954630170" />
-    <state x="461" y="151" key="SettingsEditor" timestamp="1605939557201">
+    <state width="1876" height="294" key="GridCell.Tab.0.bottom" timestamp="1606176885563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="151" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605939557201" />
+    <state width="1237" height="157" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1605987265790" />
+    <state width="1876" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606176885563" />
+    <state width="1876" height="294" key="GridCell.Tab.0.center" timestamp="1606176885563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1605987265790" />
+    <state width="1876" height="294" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606176885563" />
+    <state width="1876" height="294" key="GridCell.Tab.0.left" timestamp="1606176885563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1605987265790" />
+    <state width="1876" height="294" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606176885563" />
+    <state width="1876" height="294" key="GridCell.Tab.0.right" timestamp="1606176885563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1237" height="157" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605987265790" />
+    <state width="1876" height="294" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606176885563" />
+    <state width="1876" height="331" key="GridCell.Tab.1.bottom" timestamp="1606112072077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="331" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606112072077" />
+    <state width="1876" height="331" key="GridCell.Tab.1.center" timestamp="1606112072077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="331" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606112072077" />
+    <state width="1876" height="331" key="GridCell.Tab.1.left" timestamp="1606112072077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="331" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606112072077" />
+    <state width="1876" height="331" key="GridCell.Tab.1.right" timestamp="1606112072077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="331" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606112072077" />
+    <state width="1876" height="331" key="GridCell.Tab.2.bottom" timestamp="1606112072077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="331" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606112072077" />
+    <state width="1876" height="331" key="GridCell.Tab.2.center" timestamp="1606112072077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="331" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606112072077" />
+    <state width="1876" height="331" key="GridCell.Tab.2.left" timestamp="1606112072077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="331" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606112072077" />
+    <state width="1876" height="331" key="GridCell.Tab.2.right" timestamp="1606112072077">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="331" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606112072077" />
+    <state x="58" y="0" width="1702" height="1037" key="SettingsEditor" timestamp="1606108382009">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="58" y="0" width="1702" height="1037" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606108382009" />
     <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1605940433078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605940433078" />
+    <state x="616" y="235" key="run.anything.popup" timestamp="1606111830671">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="235" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606111830671" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1605991715633">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

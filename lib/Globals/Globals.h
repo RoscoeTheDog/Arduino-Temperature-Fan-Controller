@@ -1,12 +1,11 @@
 //
-// Created by Aspen on 11/7/2020.
+// Created by Aspen on 11/22/2020.
 //
 
-#ifndef ARDUINO_TEMPERATURE_CONTROLLER_GLOBALS_H
-#define ARDUINO_TEMPERATURE_CONTROLLER_GLOBALS_H
-#include <ArduinoSTL.h>
+#ifndef ARDUINO_TEMPERATURE_FAN_SPEED_CONTROLLER01_GLOBALS_H
+#define ARDUINO_TEMPERATURE_FAN_SPEED_CONTROLLER01_GLOBALS_H
 
-// These will run in a ISR periodically to update their values.
+// reserved for the ISR to update their values and read from without performing additional slow analogReads()
 extern volatile unsigned long int PIN_A0_READ;
 extern volatile unsigned long int PIN_A1_READ;
 extern volatile unsigned long int PIN_A2_READ;
@@ -14,56 +13,34 @@ extern volatile unsigned long int PIN_A3_READ;
 extern volatile unsigned long int PIN_A4_READ;
 extern volatile unsigned long int PIN_A5_READ;
 
+extern float THERMISTOR0_VO;
+extern unsigned long THERMISTOR0_R1;
 extern volatile float THERMISTOR0_TEMPC;
+extern volatile float THERMISTOR0_TEMPF;
+
+extern float THERMISTOR1_VO;
+extern unsigned long THERMISTOR1_R1;
 extern volatile float THERMISTOR1_TEMPC;
+extern volatile float THERMISTOR1_TEMPF;
+
+extern float THERMISTOR2_VO;
+extern unsigned long THERMISTOR2_R1;
 extern volatile float THERMISTOR2_TEMPC;
+extern volatile float THERMISTOR2_TEMPF;
+
+extern float THERMISTOR3_VO;
+extern unsigned long THERMISTOR3_R1;
 extern volatile float THERMISTOR3_TEMPC;
+extern volatile float THERMISTOR3_TEMPF;
+
+extern float THERMISTOR4_VO;
+extern unsigned long THERMISTOR4_R1;
 extern volatile float THERMISTOR4_TEMPC;
+extern volatile float THERMISTOR4_TEMPF;
+
+extern float THERMISTOR5_VO;
+extern unsigned long THERMISTOR5_R1;
 extern volatile float THERMISTOR5_TEMPC;
+extern volatile float THERMISTOR5_TEMPF;
 
-#define THERMISTOR0_NOMINAL 20000
-#define THERMISTOR1_NOMINAL 20000
-#define THERMISTOR2_NOMINAL 20000
-#define THERMISTOR3_NOMINAL 20000
-#define THERMISTOR4_NOMINAL 20000
-#define THERMISTOR5_NOMINAL 20000
-
-#define THERMISTOR0_LINE_VOLTAGE 3.62
-#define THERMISTOR1_LINE_VOLTAGE 3.62
-#define THERMISTOR2_LINE_VOLTAGE 3.62
-#define THERMISTOR3_LINE_VOLTAGE 3.62
-#define THERMISTOR4_LINE_VOLTAGE 3.62
-#define THERMISTOR5_LINE_VOLTAGE 3.62
-
-float THERMISTOR0_VO = 0;
-float THERMISTOR1_VO = 0;
-float THERMISTOR2_VO = 0;
-float THERMISTOR3_VO = 0;
-float THERMISTOR4_VO = 0;
-float THERMISTOR5_VO = 0;
-
-long THERMISTOR0_R1 = 0;
-long THERMISTOR1_R1 = 0;
-long THERMISTOR2_R1 = 0;
-long THERMISTOR3_R1 = 0;
-long THERMISTOR4_R1 = 0;
-long THERMISTOR5_R1 = 0;
-
-#define THERMISTOR0_SERIES 20000
-#define THERMISTOR1_SERIES 20000
-#define THERMISTOR2_SERIES 20000
-#define THERMISTOR3_SERIES 20000
-#define THERMISTOR4_SERIES 20000
-#define THERMISTOR5_SERIES 20000
-
-void updateVoltageIn();
-
-void updateR1();
-
-void updateTempC();
-
-float calcTempC(int nominalResistance, int nominalTemperature, long R1, int beta);
-
-
-
-#endif //ARDUINO_TEMPERATURE_CONTROLLER_GLOBALS_H
+#endif //ARDUINO_TEMPERATURE_FAN_SPEED_CONTROLLER01_GLOBALS_H
