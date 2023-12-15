@@ -1,4 +1,4 @@
-# Arduino_Temperature_Fan_Speed_Controller
+# Arduino Temperature Fan Speed Controller
 
 This small project was designed as an upgrade my 3D printer with a speed controller so I can make it even quieter. Unfortunately, I shorted the PCB design I was working with and got too busy to continue with the project. I believe the original code was designed for an Arduino Nano but I concluded later an ATMega2560 with the extra hardware timers would be more appropriate for this application.
 
